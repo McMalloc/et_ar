@@ -1,0 +1,37 @@
+<html>
+<script src="libs/aframe-master.min.js"></script>
+<script src="libs/aframe-ar.min.js"></script>
+<script src="libs/aframe-extras.loaders.min.js"></script>
+
+<body style="position: relative; margin : 0px; overflow: hidden;">
+<a-scene embedded arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: true;" antialias="true">
+
+    <!--Reagiert auf markers/hallo.png-->
+    <a-marker type='pattern' url='patterns/join.patt'>
+        <a-gltf-model src="scenes/drone_gltf/scene.gltf"
+                      position="0 2 1.5"
+                      rotation="90 180 0"
+                      scale="0.01 0.01 0.01"
+                      animation-mixer="loop:repeat">
+        </a-gltf-model>
+    </a-marker>
+
+    <!--Reagiert auf makrers/join.png-->
+    <a-marker type='pattern' url='patterns/hallo.patt'>
+        <a-gltf-model src="scenes/engine/2CylinderEngine.gltf"
+                      position="0 1 1.5"
+                      rotation="90 180 0"
+                      scale="0.003 0.003 0.003"
+                      animation-mixer="loop:repeat">
+        </a-gltf-model>
+    </a-marker>
+
+    <a-entity camera>
+        <!--Statische HUD-UI-->
+        <a-plane color="#CCC" height="0.1" position="0.4 0.3 -1" width="0.1"></a-plane>
+    </a-entity>
+
+</a-scene>
+</body>
+
+</html>
