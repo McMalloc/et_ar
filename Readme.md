@@ -1,5 +1,7 @@
 Framework für Augmentierung des Emerging Technologies Exponats, Werkschau 2018/2 Magdeburg. Funktioniert laut Entwickler der ar.js-Bibliothek für iOS erst ab Version 11 wegen Beschränkungen in der webRTC-Implementierung von Apple.
 
+Die derzeitige Version kann unter [https://svickova.suhail.uberspace.de/et_ar/](https://svickova.suhail.uberspace.de/et_ar/) ausprobiert werden. Die verfügbaren Marker liegen unter `/markers`.
+
 # Marker
 
 1. Marker [hier](https://webxr.io/marker-generator/) vorbereiten. Das Bild muss ohne den schwarzen Rand hochgeladen werden und sollte als Hintergrundfarbe `#f0f0f0` haben. Es sollte außerdem klare Linien enthalten, z.B. ist Text sehr gut geeignet.
